@@ -1,11 +1,9 @@
 #div1 {
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    left: 10px;
     z-index: 0;
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
     background-color: red;
     animation-name: ani1;
     animation-duration: 4s;
@@ -13,11 +11,11 @@
     animation-iteration-count: infinite;
 }
 @keyframes ani1 {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: green; left: 260px;}
-    75%  {background-color: blue;}
-    100% {background-color: red;}
+    0%   {background-color: red; left: 0px; top: 0px;}
+    25%  {background-color: yellow; left: 100px; top: 0px;}
+    50%  {background-color: green; left: 100px; top: 100px;}
+    75%  {background-color: blue; left: 0px; top: 100px;}
+    100% {background-color: red; left: 0px; top: 0px;}
 }
 
 #div2 {
